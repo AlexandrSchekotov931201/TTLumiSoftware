@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TTLumiSoftware</string>
+    <string name="reload">Reload</string>
+    <string name="empty_transactions_error">The transaction list is empty</string>
+    <string name="load_transactions_error">Failed to load transaction list</string>
+    <string name="error_title">Error</string>
+    <string name="it_is_clear">OK</string>
+    <string name="transaction_data_is_missing">Transaction data is missing</string>
+    <string name="transaction_status_in">IN</string>
+    <string name="transaction_status_out">OUT</string>
+    <string name="enter__wallet_address">Enter the wallet address</string>
+    <string name="load_transactions">Load transactions</string>
+    <string name="currency_eth">ETH</string>
+    <string name="date_label">date:</string>
+    <string name="to_label">to:</string>
+    <string name="from_label">from:</string>
+    <string name="method_id_label">methodId:</string>
+    <string name="address_label">address:</string>
+    <string name="uint_label">uint:</string>
+</resources>

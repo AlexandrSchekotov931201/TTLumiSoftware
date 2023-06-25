@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/valueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0.122" />
+
+    <TextView
+        android:id="@+id/currencyValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/currency_eth"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/valueTextView"
+        app:layout_constraintStart_toEndOf="@+id/valueTextView"
+        app:layout_constraintTop_toTopOf="@+id/valueTextView" />
+
+    <ImageView
+        android:id="@+id/statusImageView"
+        android:layout_width="54dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_rounded_white_5_with_stroke"
+        android:backgroundTint="@color/backgroundColorOut"
+        app:layout_constraintBottom_toBottomOf="@+id/currencyValueTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/currencyValueTextView"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorOut"
+        app:layout_constraintBottom_toBottomOf="@+id/statusImageView"
+        app:layout_constraintEnd_toEndOf="@+id/statusImageView"
+        app:layout_constraintStart_toStartOf="@+id/statusImageView"
+        app:layout_constraintTop_toTopOf="@+id/statusImageView"
+        tools:text="OUT" />
+
+    <TextView
+        android:id="@+id/fromLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/from_label"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valueTextView" />
+
+    <TextView
+        android:id="@+id/fromValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fromLabelTextView"
+        app:layout_constraintStart_toEndOf="@+id/fromLabelTextView"
+        app:layout_constraintTop_toTopOf="@+id/fromLabelTextView"
+        tools:text="0xb7C8f77f3a81eDdAe70431FDFc85D970A7865Fcf" />
+
+    <TextView
+        android:id="@+id/toLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/to_label"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromValueTextView" />
+
+    <TextView
+        android:id="@+id/toValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toLabelTextView"
+        app:layout_constraintStart_toStartOf="@+id/fromValueTextView"
+        app:layout_constraintTop_toTopOf="@+id/toLabelTextView"
+        tools:text="0xb7C8f77f3a81eDdAe70431FDFc85D970A7865Fcf" />
+
+    <TextView
+        android:id="@+id/dateLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/date_label"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toLabelTextView" />
+
+    <TextView
+        android:id="@+id/dateMonthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateLabelTextView"
+        app:layout_constraintStart_toStartOf="@+id/toValueTextView"
+        app:layout_constraintTop_toTopOf="@+id/dateLabelTextView"
+        tools:text="12 Янв" />
+
+    <TextView
+        android:id="@+id/dateTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateMonthTextView"
+        app:layout_constraintStart_toEndOf="@+id/dateMonthTextView"
+        app:layout_constraintTop_toTopOf="@+id/dateMonthTextView"
+        tools:text="12:54" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/gray_100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

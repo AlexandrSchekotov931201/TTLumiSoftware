@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/idMethodLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/method_id_label"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idMethodTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idMethodLabelTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idMethodLabelTextView"
+        app:layout_constraintTop_toTopOf="@+id/idMethodLabelTextView"
+        tools:text="0x095ea7b3" />
+
+    <TextView
+        android:id="@+id/addressLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/address_label"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idMethodLabelTextView" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addressLabelTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/idMethodTextView"
+        app:layout_constraintTop_toTopOf="@+id/addressLabelTextView"
+        tools:text="0x1AAAd07998466cD3Eb8140827DDdb37570BE1e63" />
+
+    <TextView
+        android:id="@+id/unitLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/uint_label"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressLabelTextView" />
+
+    <TextView
+        android:id="@+id/unitTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:lines="5"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/unitLabelTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/addressTextView"
+        app:layout_constraintTop_toTopOf="@+id/unitLabelTextView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="115792089237316195423570985008687907853269984665640564039457584007913129639935" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:backgroundTint="@color/colorLightPrimary"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/it_is_clear"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unitTextView"
+        tools:layout_editor_absoluteX="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
