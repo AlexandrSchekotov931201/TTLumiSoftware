@@ -20,3 +20,5 @@ abstract class BaseRepository {
     }
 }
 ```
+
+Получить api key можно тут - https://docs.etherscan.io/getting-started/viewing-api-usage-statistics
