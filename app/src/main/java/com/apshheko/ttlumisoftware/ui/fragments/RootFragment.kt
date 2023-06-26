@@ -4,14 +4,13 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
-import androidx.fragment.app.Fragment
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.apshheko.ttlumisoftware.R
 import com.apshheko.ttlumisoftware.databinding.RootFragmentBinding
 import com.apshheko.ttlumisoftware.extencions.replaceFragment
 import org.web3j.crypto.WalletUtils
 
-class RootFragment : Fragment(R.layout.root_fragment) {
+class RootFragment : CoreFragment(R.layout.root_fragment) {
 
     private val binding by viewBinding(RootFragmentBinding::bind)
 

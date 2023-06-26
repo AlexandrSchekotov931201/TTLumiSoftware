@@ -34,3 +34,20 @@ fun Fragment.replaceFragment(
     if (addToBackStack) transaction.addToBackStack(target.javaClass.name)
     transaction.commit()
 }
+
+fun Fragment.popBackStack() {
+    val fragmentManager = parentFragment?.childFragmentManager ?: requireActivity().supportFragmentManager
+    if (fragmentManager.fragments.size > 1) {
+        fragmentManager.popBackStack()
+    } else {
+        requireActivity().popBackStack()
+    }
+}
+
+fun FragmentActivity.popBackStack() {
+    if (supportFragmentManager.backStackEntryCount > 1) {
+        supportFragmentManager.popBackStack()
+    } else {
+        finish()
+    }
+}
